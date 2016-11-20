@@ -1,20 +1,7 @@
-/*
-Theme Name: Brushed 
-Theme URI: http://www.themes.alessioatzeni.com/html/brushed/
-Author: Alessio Atzeni
-Author URI: http://www.alessioatzeni.com
-Description: Personal Website and Portfolio of Alessio Atzeni
-Version: 1.0
-*/
-
-
-/* ==================================================
-   Basic Styles
-================================================== */
 
 html, body {
 	height: 100%;
-	
+	font-family: PingFang SC,Lantinghei SC,Helvetica Neue;
 }
 
 html, hmtl a{
@@ -71,6 +58,8 @@ strong {
 
 p {
 	margin: 0 0 30px;
+	font-size: 14px;
+	line-height: 18px;
 }
 
 hr {

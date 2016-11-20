@@ -197,8 +197,7 @@ jQuery(function($){
    			padding : 0,
    			beforeShow: function () {
    				this.title = $(this.element).attr('title');
-   				// this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
-   				this.title = '<h4>' + this.title + '</h4>';
+   				this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
    			},
    			helpers : {
    				title : { type: 'inside' },
@@ -474,9 +473,25 @@ jQuery(function($){
 			$('.sub-menu').children('li').on('click', function() {
 				$('#thumbs').empty();
 				var furnitureName = $(this).parent().prev().text();
+				var enName;
 				var index = $(this).index();
-				console.log(index);
-				readString(furnitureName,index);
+				// console.log(index);
+				if(furnitureName == "沙发"){
+					enName = "SOFA";
+				}else if(furnitureName == "椅子"){
+					enName = "CHAIR";
+				}else if(furnitureName == "茶几"){
+					enName = "OCCASIONAL";
+				}else if(furnitureName == "桌子"){
+					enName = "TABLE";
+				}else if(furnitureName == "床"){
+					enName = "BED";
+				}else if(furnitureName == "柜子"){
+					enName = "CABINET";
+				}else if(furnitureName == "配件"){
+					enName = "ACCESSORIES";
+				}
+				readString(enName,index);
 			});
 			function readString(_str,index) {
 				// console.log(_data[_str][index]);
@@ -492,7 +507,7 @@ jQuery(function($){
 					var _title = _obj.title;
 					var _thumb = _obj.thumb;
 					var _largeImg = _obj.largeImg;
-					// var _describe = _obj.describe_en;
+					// var _describe = _obj.describe_cn;
 
 					var dom = [
 						'<li class="item-thumbs span3 design">',
@@ -501,7 +516,7 @@ jQuery(function($){
 						'<span class="overlay-img"></span>',
 						'<span class="overlay-img-thumb font-icon-plus"></span>',
 						'</a>',
-						'<img src='+_thumb+ ' alt='+ describe_en +'>',
+						'<img src='+_thumb+ ' alt='+ describe_cn +'>',
 						'</li>'
 					].join('');
 
