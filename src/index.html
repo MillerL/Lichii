@@ -1,32 +1,23 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]>
-<html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]>
-<html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if (IE 9)]>
-<html class="no-js ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en-US"> <!--<![endif]-->
+
+<html lang="en-US">
+<!--<![endif]-->
+
 <head>
 
     <!-- Meta Tags -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Lichii</title>
 
-    <meta name="description" content="Insert Your Site Description"/>
+    <meta name="description" content="Insert Your Site Description" />
     <!-- Mobile Specifics -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="MobileOptimized" content="320"/>
+    <meta name="HandheldFriendly" content="true" />
 
-    <!-- Mobile Internet Explorer ClearType Technology -->
-    <!--[if IEMobile]>
-    <meta http-equiv="cleartype" content="on">  <![endif]-->
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
     <!-- Supersized -->
     <link href="css/supersized.css" rel="stylesheet">
     <link href="css/supersized.shutter.css" rel="stylesheet">
@@ -34,19 +25,20 @@
     <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
     <!-- Shortcodes -->
-    <link href="css/shortcodes.css" rel="stylesheet">
+    <!-- <link href="css/shortcodes.css" rel="stylesheet"> -->
     <!-- Responsive -->
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
     <!-- Supersized -->
     <link href="css/supersized.css" rel="stylesheet">
     <link href="css/supersized.shutter.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
     <!-- Google Font -->
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900'
-          rel='stylesheet' type='text/css'>
-
+    <!-- <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900'rel='stylesheet' type='text/css'> -->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
     <link href="css/main.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="css/agency.css"> -->
+
 
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="#">
@@ -59,421 +51,778 @@
     <script src="js/modernizr.js"></script>
 </head>
 
-<body>
-<!-- This section is for Splash Screen -->
-<div class="ole">
-    <section id="jSplash">
-        <div id="circle"></div>
-    </section>
-</div>
-<!-- End of Splash Screen -->
-
-<!-- Homepage Slider -->
-<div id="home-slider">
-    <div class="overlay"></div>
-
-    <div class="slider-text">
-        <div id="slidecaption"></div>
+<body id="page-top" class="index">
+    <!-- This section is for Splash Screen -->
+    <div class="ole">
+        <section id="jSplash">
+            <div id="circle"></div>
+        </section>
     </div>
+    <!-- End of Splash Screen -->
+    <!-- Header -->
+    <header>
+        <div class="sticky-nav">
+            <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
 
-    <div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
-
-        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
-    </div>
-</div>
-<!-- End Homepage Slider -->
-
-<!-- Header -->
-<header>
-    <div class="sticky-nav">
-        <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-
-        <div id="logo">
-            <a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">深圳市骊驰家具有限公司</a>
-        </div>
-
-        <nav id="menu">
-            <ul id="menu-nav">
-                <li class="current"><a href="#home-slider">主页</a></li>
-                <li><a href="#work">家装创意</a></li>
-                <li><a href="#about">关于我们</a></li>
-                <li><a href="#contact">联系我们</a></li>
-                <li><a href="shortcodes.html" class="external">新闻</a></li>
-            </ul>
-        </nav>
-
-    </div>
-</header>
-<!-- End Header -->
-
-<!-- Our Work Section -->
-<div id="work" class="page">
-    <div class="container">
-        <!-- Title Page -->
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <h2 class="title">家装创意</h2>
-                    <h3 class="title-description">缤纷种类，应有尽有。</h3>
-                </div>
-            </div>
-        </div>
-        <!-- End Title Page -->
-
-        <!-- Portfolio Projects -->
-        <div class="row">
-            <div class="span3">
-
-                <!-- End Filter -->
-                <nav id="cd-lateral-nav">
-                    <ul class="cd-navigation">
-                        <li class="item-has-children">
-                            <a id="defualtTag" href="#0">沙发</a>
-                            <ul id="defualtUl" class="sub-menu">
-                                <li><a href="#0">Jane</a></li>
-                                <li><a href="#0">Avalon</a></li>
-                                <li><a href="#0">Clouds</a></li>
-                                <li><a href="#0">Alison Plus</a></li>
-                                <li><a href="#0">Jane Slim</a></li>
-                                <li><a href="#0">Crescent</a></li>
-                                <li><a href="#0">Balance Plus</a></li>
-                                <li><a href="#0">Lazytime</a></li>
-                                <li><a href="#0">Casa</a></li>
-                                <li><a href="#0">Era</a></li>
-                            </ul>
-                        </li> <!-- item-has-children -->
-
-                        <li class="item-has-children">
-                            <a href="#0">椅子</a>
-                            <ul class="sub-menu">
-                                <li><a href="#0">Venus</a></li>
-                                <li><a href="#0">Flora</a></li>
-                                <li><a href="#0">Baroque</a></li>
-                                <li><a href="#0">Walitz Plus</a></li>
-                                <li><a href="#0">Ming</a></li>
-                                <li><a href="#0">Eric</a></li>
-                                <li><a href="#0">Leman</a></li>
-                                <li><a href="#0">Talk</a></li>
-                                <li><a href="#0">Puck</a></li>
-                                <li><a href="#0">Avalon</a></li>
-                                <li><a href="#0">Balance Plus</a></li>
-                                <li><a href="#0">Dice</a></li>
-                                <li><a href="#0">Crescent</a></li>
-                                <li><a href="#0">Lazytime</a></li>
-                            </ul>
-                        </li> <!-- item-has-children -->
-
-                        <li class="item-has-children">
-                            <a href="#0">茶几</a>
-                            <ul class="sub-menu">
-                                <li><a href="#0">Jane</a></li>
-                                <li><a href="#0">Enzo</a></li>
-                                <li><a href="#0">Frame</a></li>
-                                <li><a href="#0">Clouds</a></li>
-                                <li><a href="#0">Pebble</a></li>
-                                <li><a href="#0">Drum</a></li>
-                                <li><a href="#0">Mod</a></li>
-                                <li><a href="#0">Era</a></li>
-                                <li><a href="#0">Hanna</a></li>
-                                <li><a href="#0">Teri</a></li>
-                                <li><a href="#0">Lark</a></li>
-                                <li><a href="#0">Plato</a></li>
-                            </ul>
-                        </li> <!-- item-has-children -->
-                        <li class="item-has-children">
-                            <a href="#0">桌子</a>
-                            <ul class="sub-menu">
-                                <li><a href="#0">Bend</a></li>
-                                <li><a href="#0">Vessel</a></li>
-                                <li><a href="#0">Verge</a></li>
-                                <li><a href="#0">Max</a></li>
-                            </ul>
-                        </li> <!-- item-has-children -->
-                        <li class="item-has-children">
-                            <a href="#0">床</a>
-                            <ul class="sub-menu">
-                                <li><a href="#0">Crescent Bed</a></li>
-                                <li><a href="#0">Alison Bed Plus</a></li>
-                                <li><a href="#0">Screen Bed</a></li>
-                                <li><a href="#0">Era Bed Plus</a></li>
-                            </ul>
-                        </li> <!-- item-has-children -->
-                        <li class="item-has-children">
-                            <a href="#0">柜子</a>
-                            <ul class="sub-menu">
-                                <li><a href="#0">Villa</a></li>
-                                <li><a href="#0">Solo</a></li>
-                                <li><a href="#0">Max</a></li>
-                                <li><a href="#0">Stilts</a></li>
-                                <li><a href="#0">Coast</a></li>
-                            </ul>
-                        </li> <!-- item-has-children -->
-                        <li class="item-has-children">
-                            <a href="#0">配件</a>
-                            <ul class="sub-menu">
-                                <li><a href="#0">Bell</a></li>
-                                <li><a href="#0">Lesso</a></li>
-                            </ul>
-                        </li> <!-- item-has-children -->
-                    </ul> <!-- cd-navigation -->
-                </nav>
+            <div id="logo">
+                <a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">深圳市骊驰家具有限公司</a>
             </div>
 
-            <div class="span9">
-                <div class="row">
-                    <section id="projects">
-                        <ul id="thumbs">
+            <nav id="menu">
+                <ul id="menu-nav">
+                    <li class="current"><a href="#home-slider">主页</a></li>
+                    <li><a href="#blogevent">新闻</a></li>
+                    <li><a href="#work">家装创意</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#serviceModal" data-toggle="modal" class="external">服务支持</a></li>
+                    <li><a href="#qualityModal" data-toggle="modal" class="external">品质</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Homepage Slider -->
+    <div id="home-slider">
+        <div class="overlay"></div>
+
+        <div class="slider-text">
+            <div id="slidecaption"></div>
+        </div>
+
+        <div class="control-nav">
+            <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+            <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+            <ul id="slide-list"></ul>
+
+            <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+        </div>
+    </div>
+    <!-- End Homepage Slider -->
+    <!--Blog Event Starts-->
+    <div id="blogevent" class="blogevent spacer page">
+        <div class="container">
+            <div class="row">
+
+                <!-- events -->
+                <div class="col-md-6 col-xs-12">
+                    <div class="events" id="appEvent">
+                        <h3><span class="glyphicon glyphicon-calendar"></span> Events</h3>
+                        <ul>
+                            <li v-for="event in events">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3 col-lg-4">
+                                        <a href="#eventModal" data-toggle="modal" v-on:click="showEventModal(event.id)"><img v-bind:src="event.thumb" class="img-responsive" alt="music theme" /></a>
+                                    </div>
+                                    <div class="col-xs-12  col-sm-6 col-lg-5">
+                                        <h5><a href="#" data-toggle="modal" data-target="#eventModal" v-on:click="showEventModal(event.id)"> {{ event.title }} </a></h5>
+                                        <p> {{ event.intro }} </p>
+                                    </div>
+                                    <div class="col-xs-12  col-sm-3 col-lg-3 date"><b>{{event.year}}</b><span>{{event.date}}</span></div>
+                                </div>
+                            </li>
 
                         </ul>
-                    </section>
-
-                </div>
-            </div>
-        </div>
-        <!-- End Portfolio Projects -->
-    </div>
-</div>
-<!-- End Our Work Section -->
-
-<!-- About Section -->
-<div id="about" class="page-alternate">
-    <div class="container">
-        <!-- Title Page -->
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <h2 class="title">关于我们</h2>
-                    <h3 class="title-description">了解骊驰家具</h3>
-                </div>
-            </div>
-        </div>
-        <!-- End Title Page -->
-
-        <!-- People -->
-        <div class="row">
-
-            <!-- Start Profile -->
-            <div class="span4 profile">
-                <div class="image-wrap">
-                    <div class="hover-wrap">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-text-thumb">CTO/Founder</span>
                     </div>
-                    <img src="img/profile/profile-01.jpg" alt="John Doe">
                 </div>
-                <h3 class="profile-name">John Doe</h3>
-                <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac
-                    augue at erat <a href="#">hendrerit dictum</a>.
-                    Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam
-                    vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                    himenaeos.</p>
+                <!-- events -->
 
+                <!-- blog -->
+                <div class="col-md-5 col-md-offset-1 col-xs-12">
+                    <div class="ourblog" id="newsApp">
+
+                        <h3><span class="glyphicon glyphicon-book"></span>News</h3>
+                        <ul class="row">
+                            <li class="row" v-for="newItem in news">
+                                <a href="#" data-toggle="modal" data-target="#eventModal" v-on:click='showNewsModal(newItem.id)' class="col-xs-12 col-sm-3 col-lg-4"><img v-bind:src="newItem.thumb" class="img-responsive" alt="music theme" /></a>
+                                <div class="blogtext col-xs-12 col-sm-9 col-lg-8">
+                                    <h5><a href="#" data-toggle="modal" data-target="#eventModal" v-on:click="showNewsModal(newItem.id)"> {{newItem.title}} </a></h5>
+                                    <small>Posted on: {{ newItem.date }}</small>
+                                    <p>{{ newItem.intro }}</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
 
             </div>
-            <!-- End Profile -->
+        </div>
+    </div>
 
-            <!-- Start Profile -->
-            <div class="span4 profile">
-                <div class="image-wrap">
-                    <div class="hover-wrap">
+    <!-- Our Work Section -->
+    <div id="work" class="page">
+        <div class="container">
+
+            <!-- Title Page -->
+            <div class="row">
+                <div class="span12">
+                    <div class="title-page">
+                        <h2 class="title">家装创意</h2>
+                        <h3 class="title-description">缤纷种类，应有尽有。</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- End Title Page -->
+
+            <!-- Portfolio Projects -->
+            <div class="row">
+                <div class="span3">
+
+                    <!-- End Filter -->
+                    <nav id="cd-lateral-nav">
+                        <ul class="cd-navigation">
+                            <li class="item-has-children">
+                                <a id="defualtTag" href="#0">沙发</a>
+                                <ul id="defualtUl" class="sub-menu">
+                                    <li><a href="#0">Jane</a></li>
+                                    <li><a href="#0">Avalon</a></li>
+                                    <li><a href="#0">Clouds</a></li>
+                                    <li><a href="#0">Alison Plus</a></li>
+                                    <li><a href="#0">Jane Slim</a></li>
+                                    <li><a href="#0">Crescent</a></li>
+                                    <li><a href="#0">Balance Plus</a></li>
+                                    <li><a href="#0">Lazytime</a></li>
+                                    <li><a href="#0">Casa</a></li>
+                                    <li><a href="#0">Era</a></li>
+                                </ul>
+                            </li>
+                            <!-- item-has-children -->
+
+                            <li class="item-has-children">
+                                <a href="#0">椅子</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#0">Venus</a></li>
+                                    <li><a href="#0">Flora</a></li>
+                                    <li><a href="#0">Baroque</a></li>
+                                    <li><a href="#0">Walitz Plus</a></li>
+                                    <li><a href="#0">Ming</a></li>
+                                    <li><a href="#0">Eric</a></li>
+                                    <li><a href="#0">Leman</a></li>
+                                    <li><a href="#0">Talk</a></li>
+                                    <li><a href="#0">Puck</a></li>
+                                    <li><a href="#0">Avalon</a></li>
+                                    <li><a href="#0">Balance Plus</a></li>
+                                    <li><a href="#0">Dice</a></li>
+                                    <li><a href="#0">Crescent</a></li>
+                                    <li><a href="#0">Lazytime</a></li>
+                                </ul>
+                            </li>
+                            <!-- item-has-children -->
+
+                            <li class="item-has-children">
+                                <a href="#0">茶几</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#0">Jane</a></li>
+                                    <li><a href="#0">Enzo</a></li>
+                                    <li><a href="#0">Frame</a></li>
+                                    <li><a href="#0">Clouds</a></li>
+                                    <li><a href="#0">Pebble</a></li>
+                                    <li><a href="#0">Drum</a></li>
+                                    <li><a href="#0">Mod</a></li>
+                                    <li><a href="#0">Era</a></li>
+                                    <li><a href="#0">Hanna</a></li>
+                                    <li><a href="#0">Teri</a></li>
+                                    <li><a href="#0">Lark</a></li>
+                                    <li><a href="#0">Plato</a></li>
+                                </ul>
+                            </li>
+                            <!-- item-has-children -->
+                            <li class="item-has-children">
+                                <a href="#0">桌子</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#0">Bend</a></li>
+                                    <li><a href="#0">Vessel</a></li>
+                                    <li><a href="#0">Verge</a></li>
+                                    <li><a href="#0">Max</a></li>
+                                </ul>
+                            </li>
+                            <!-- item-has-children -->
+                            <li class="item-has-children">
+                                <a href="#0">床</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#0">Crescent Bed</a></li>
+                                    <li><a href="#0">Alison Bed Plus</a></li>
+                                    <li><a href="#0">Screen Bed</a></li>
+                                    <li><a href="#0">Era Bed Plus</a></li>
+                                </ul>
+                            </li>
+                            <!-- item-has-children -->
+                            <li class="item-has-children">
+                                <a href="#0">柜子</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#0">Villa</a></li>
+                                    <li><a href="#0">Solo</a></li>
+                                    <li><a href="#0">Max</a></li>
+                                    <li><a href="#0">Stilts</a></li>
+                                    <li><a href="#0">Coast</a></li>
+                                </ul>
+                            </li>
+                            <!-- item-has-children -->
+                            <li class="item-has-children">
+                                <a href="#0">配件</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#0">Bell</a></li>
+                                    <li><a href="#0">Lesso</a></li>
+                                </ul>
+                            </li>
+                            <!-- item-has-children -->
+                        </ul>
+                        <!-- cd-navigation -->
+                    </nav>
+                </div>
+
+                <div class="span9">
+                    <div class="row">
+                        <section id="projects">
+                            <ul id="thumbs">
+
+                            </ul>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End Portfolio Projects -->
+        </div>
+    </div>
+    <!-- End Our Work Section -->
+
+    <!-- About Section -->
+    <div id="about" class="page-alternate">
+        <div class="container">
+            <!-- Title Page -->
+            <div class="row">
+                <div class="span12">
+                    <div class="title-page">
+                        <h2 class="title">关于我们</h2>
+                        <h3 class="title-description">了解骊驰家具</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- End Title Page -->
+
+            <!-- People -->
+            <div class="row">
+
+                <!-- Start Profile -->
+                <div class="span4 profile">
+                    <div class="image-wrap">
+                        <!-- <div class="hover-wrap">
+                        <span class="img/about/1.jpg"></span>
+                        <span class="overlay-text-thumb">CTO/Founder</span>
+                    </div> -->
+                        <img src="img/about/idea.jpg" alt="John Doe">
+                    </div>
+                    <h3 class="profile-name">理念</h3>
+                    <p class="profile-description">
+                        家具之于人类，是心灵在家居生活中的回归。<br> 每次接触，都在内心产生一种不可察觉的暗示，然后形成心理的表达。
+                        <br>了解人与环境的沟通，希望传递一种生活态度和情感，表达优雅的极致生活方式。 深刻了解用户需求，锐驰家具产品强调创造和实现，力求精确诠释每个客户独一无二的“HOME IDEA”。</p>
+
+
+                </div>
+                <!-- End Profile -->
+
+                <!-- Start Profile -->
+                <div class="span4 profile">
+                    <div class="image-wrap">
+                        <!-- <div class="hover-wrap">
                         <span class="overlay-img"></span>
                         <span class="overlay-text-thumb">Creative Director</span>
+                    </div> -->
+                        <img src="img/about/brand.jpg" alt="Jane Helf">
                     </div>
-                    <img src="img/profile/profile-02.jpg" alt="Jane Helf">
+                    <h3 class="profile-name">品牌</h3>
+                    <p class="profile-description">骊驰家具创立于2011年，其设计研发部位于誉有“设计之都”的深圳， 集合了一帮真正热爱家具的国内外设计师，历经三年设计与研发，凭借2016年推出的骊驰高端S系列，在行业内取得了骄人的成绩。 每款新产品的推出都是经过骊驰团队的精心设计和工艺师们细心的研究，秉着三年磨一剑的精神做好骊驰的每一件产品，2016年即将推出骊驰的中端C系列。
+                    </p>
+
+
                 </div>
-                <h3 class="profile-name">Jane Helf</h3>
-                <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac
-                    augue at erat <a href="#">hendrerit dictum</a>.
-                    Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam
-                    vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                    himenaeos.</p>
+                <!-- End Profile -->
 
-
-            </div>
-            <!-- End Profile -->
-
-            <!-- Start Profile -->
-            <div class="span4 profile">
-                <div class="image-wrap">
-                    <div class="hover-wrap">
+                <!-- Start Profile -->
+                <div class="span4 profile">
+                    <div class="image-wrap">
+                        <!-- <div class="hover-wrap">
                         <span class="overlay-img"></span>
                         <span class="overlay-text-thumb">Lead Designer</span>
+                    </div> -->
+                        <img src="img/about/development.jpg" alt="Joshua Insanus">
                     </div>
-                    <img src="img/profile/profile-03.jpg" alt="Joshua Insanus">
+                    <h3 class="profile-name">发展</h3>
+                    <p class="profile-description">历经三年设计与研发，凭借2016年推出的骊驰高端S系列，在行业内取得了骄人的成绩。 每款新产品的推出都是经过骊驰团队的精心设计和工艺师们细心的研究，秉着三年磨一剑的精神做好骊驰的每一件产品，2016年即将推出骊驰的中端C系列。
+                    </p>
+
+
                 </div>
-                <h3 class="profile-name">Joshua Insanus</h3>
-                <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac
-                    augue at erat <a href="#">hendrerit dictum</a>.
-                    Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam
-                    vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                    himenaeos.</p>
+                <!-- End Profile -->
 
-                <!--<div class="social">
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
-                        <li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
-                        <li><a href="#"><i class="font-icon-social-vimeo"></i></a></li>
-                    </ul>
-                </div>-->
             </div>
-            <!-- End Profile -->
-
+            <!-- End People -->
         </div>
-        <!-- End People -->
     </div>
-</div>
-<!-- End About Section -->
+    <!-- End About Section -->
 
 
-<!-- Contact Section -->
-<div id="contact" class="page">
-    <div class="container">
-        <!-- Title Page -->
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <h2 class="title">联系我们</h2>
-                    <h3 class="title-description">We’re currently accepting new client projects. We look forward to
-                        serving you.</h3>
+    <!-- Contact Section -->
+    <div id="contact" class="page">
+        <div class="container">
+            <!-- Title Page -->
+            <div class="row">
+                <div class="span12">
+                    <div class="title-page">
+                        <h2 class="title">联系我们</h2>
+                        <!-- <h3 class="title-description">深圳市龙岗区横岗街道四联社区山塘工业区15号三楼</h3> -->
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- End Title Page -->
+            <!-- End Title Page -->
 
-        <!-- Contact Form -->
-        <div class="row">
-            <div class="span9">
-
-                <form id="contact-form" class="contact-form" action="#">
-                    <p class="contact-name">
-                        <input id="contact_name" type="text" placeholder="Full Name" value="" name="name"/>
-                    </p>
-                    <p class="contact-email">
-                        <input id="contact_email" type="text" placeholder="Email Address" value="" name="email"/>
-                    </p>
-                    <p class="contact-message">
-                        <textarea id="contact_message" placeholder="Your Message" name="message" rows="15"
-                                  cols="40"></textarea>
-                    </p>
-                    <p class="contact-submit">
-                        <a id="contact-submit" class="submit" href="#">Send Your Email</a>
-                    </p>
-
-                    <div id="response">
+            <!-- Contact Form -->
+            <div class="row">
+                <div class="map">
+                    <div id="allmap">
 
                     </div>
-                </form>
+                </div>
 
-            </div>
-
-            <div class="span3">
-                <div class="contact-details">
-                    <h3>Contact Details</h3>
-                    <ul>
-                        <li><a href="#">hello@brushed.com</a></li>
-                        <li>(916) 375-2525</li>
-                        <li>
-                            深圳骊驰家具
-                            <br>
-                            5240 Vanish Island. 105
-                            <br>
-                            Unknow
-                        </li>
-                    </ul>
+                <div class="span3">
+                    <div class="contact-details">
+                        <h3>详细信息</h3>
+                        <ul>
+                            <li>邮箱:<br>2954383361@qq.com</li>
+                            <li>电话:<br>086-0755-89765854</li>
+                            <li>
+                                地址:<br> 深圳市龙岗区横岗街道四联社区山塘工业区15号三楼
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <!-- End Contact Form -->
         </div>
-        <!-- End Contact Form -->
     </div>
-</div>
-<!-- End Contact Section -->
+    <!-- End Contact Section -->
 
-<!-- Twitter Feed -->
-<div id="twitter-feed" class="page-alternate">
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                <div class="follow">
-                    <a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><i
-                            class="font-icon-social-twitter"></i></a>
-                </div>
+    <!-- Twitter Feed -->
+    <div id="twitter-feed" class="page-alternate">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="follow">
 
-                <div id="ticker" class="query">
+                    </div>
+
+                    <!-- <div id="ticker" class="query"> -->
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Twitter Feed -->
+    </div>
 
-<!-- Socialize -->
-<!--<div id="social-area" class="page">
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                <nav id="social">
-                    <ul>
-                        <li><a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><span
-                                class="font-icon-social-twitter"></span></a></li>
-                        <li><a href="http://dribbble.com/Bluxart" title="Follow Me on Dribbble" target="_blank"><span
-                                class="font-icon-social-dribbble"></span></a></li>
-                        <li><a href="http://forrst.com/people/Bluxart" title="Follow Me on Forrst" target="_blank"><span
-                                class="font-icon-social-forrst"></span></a></li>
-                        <li><a href="http://www.behance.net/alessioatzeni" title="Follow Me on Behance" target="_blank"><span
-                                class="font-icon-social-behance"></span></a></li>
-                        <li><a href="https://www.facebook.com/Bluxart" title="Follow Me on Facebook"
-                               target="_blank"><span class="font-icon-social-facebook"></span></a></li>
-                        <li><a href="https://plus.google.com/105500420878314068694" title="Follow Me on Google Plus"
-                               target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
-                        <li><a href="http://www.linkedin.com/in/alessioatzeni" title="Follow Me on LinkedIn"
-                               target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
-                        <li><a href="http://themeforest.net/user/Bluxart" title="Follow Me on ThemeForest"
-                               target="_blank"><span class="font-icon-social-envato"></span></a></li>
-                        <li><a href="http://zerply.com/Bluxart/public" title="Follow Me on Zerply" target="_blank"><span
-                                class="font-icon-social-zerply"></span></a></li>
-                    </ul>
-                </nav>
+    <!-- Footer -->
+    <footer>
+        <p class="credits">&copy;Copyright (c) 2016 Copyright Holder All Rights Reserved.</p>
+    </footer>
+    <!-- End Footer -->
+    <div class="portfolio-modal modal fade" id="eventModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body" id="eventDetail">
+                                <!-- Project Details Go Here -->
+                                <h2>{{title}}</h2>
+                                <!-- <p class="item-intro text-muted">2016-09-09 posted</p> -->
+                                <img class="img-responsive img-centered" v-bind:src="img" alt="">
+                                <p>{{copy}}</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>-->
-<!-- End Socialize -->
-
-<!-- Footer -->
-<footer>
-    <p class="credits">&copy;2013 Brushed. <a href="http://themes.alessioatzeni.com/html/brushed/"
-                                              title="Brushed | Responsive One Page Template">Brushed Template</a> by <a
-            href="http://www.lichii.cn/" title="Alessio Atzeni | Web Designer &amp; Front-end Developer">Alessio
-        Atzeni</a></p>
-</footer>
-<!-- End Footer -->
-
-<!-- Back To Top -->
-<a id="back-to-top" href="#">
-    <i class="font-icon-arrow-simple-up"></i>
-</a>
-<!-- End Back to Top -->
+    <!-- Modal -->
 
 
-<!-- Js -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
-<script src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="js/supersized.3.2.7.min.js"></script> <!-- Slider -->
-<script src="js/waypoints.js"></script> <!-- WayPoints -->
-<script src="js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-<script src="js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-<script src="js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-<script src="js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<script src="js/jquery.tweet.js"></script> <!-- Tweet -->
-<script src="js/placeholder.js"></script>
-<script src="js/plugins.js"></script>
-<!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-<script src="js/main.js"></script> <!-- Default JS -->
-<!-- End Js -->
+    <div class="portfolio-modal modal fade" id="serviceModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>SERVICE </h2>
+                                <div id="service">
+                                    <ul class="nav nav-pills">
+                                        <li class="active">
+                                            <a href="#1b" data-toggle="tab">产品服务承诺</a>
+                                        </li>
+                                        <li><a href="#2b" data-toggle="tab">产品使用指南</a>
+                                        </li>
+                                        <li><a href="#3b" data-toggle="tab">产品保养指南</a>
+                                        </li>
+                                        <li><a href="#4b" data-toggle="tab">常见问题</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content clearfix">
+                                        <div class="tab-pane active" id="1b">
+                                            <p>CAMERICH软体产品的内部实木框架均选用进口优质大径级桦木，运用实木与金属结合的工艺，增强牢固度，并在2009年1月对全线产品进行了工艺升级，因此，在正常使用及维护条件下，CAMERICH为2009年4月1日之后购买的沙发产品承诺框架10年质保。<br>
+                                                <br>维修、退换货服务<br>● 时间原则<br>自客户与CAMERICH签订销售合同之日起算的一年内。
+                                                <br>● 维修原则<br>凡经质检鉴定属于产品质量问题的，CAMERICH免费提供维修服务；
+                                                <br>凡经质检鉴定属于人为原因造成产品损坏的，CAMERICH根据公司标准提供有偿维修服务；
+                                                <br>● 换货原则<br>同一产品同一问题第二次出现，凡经质检鉴定属于产品质量问题的，CAMERICH提供产品同款同规格更换服务；
+                                                <br>● 退货原则<br>同一产品经调换后，仍未能达到质量标准的，或在约定期限内未能给予调换的，CAMERICH承诺予以退货。
+                                                <br><br>我们将同各地经销商一起，建立锐驰用户服务系统，以每种产品维护特点为依据，为用户提供适当有效的增值服务、产品使用后的维护保养和售后问题的及时妥善的解决等服务。
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane" id="2b">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <a href="#" class="nav-tabs-dropdown btn btn-block btn-primary">Tabs</a>
+                                                    <ul id="nav-tabs-wrapper" class="nav nav-tabs nav-pills nav-stacked well smallTabs">
+                                                        <li class="active"><a href="#vtab1" data-toggle="tab">运输</a></li>
+                                                        <li><a href="#vtab2" data-toggle="tab">拆包及安装</a></li>
+                                                        <li><a href="#vtab3" data-toggle="tab">移动</a></li>
+                                                        <li><a href="#vtab4" data-toggle="tab">摆放</a></li>
+                                                        <li><a href="#vtab5" data-toggle="tab">使用</a></li>
+                                                        <li><a href="#vtab6" data-toggle="tab">家具安全承重</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <div class="tab-content">
+                                                        <div role="tabpanel" class="tab-pane fade in active" id="vtab1">
+                                                            <p>家具产品在运输时应把纸箱按照箭头方向放置，堆放高度不能超过两层。</p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade" id="vtab2">
+                                                            <p> 新购置家具在拆包时应小心把封箱胶纸割开，注意不要割入太深，以免划破家具表面。开箱后小心拿出家具，找出安装图纸和配件。然后，仔细阅读安装图纸，严格按照图纸指示进行安装工作。安装完成后，请保留好图纸，以备需要拆卸和重新安装时使用。</p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="vtab3">
+                                                            <p>移动家具时，首先检查各处连接件的连接是否牢固。沙发类产品侧重检查沙发脚与框架的连接；柜体类产品检查柜体底脚与柜体的连接、门板间的连接、门把手的连接及内部零件的连接等。另外，柜体类产品应取出柜内及抽屉内物件，并将柜门和抽屉封紧，以免家具倾斜，部件滑落伤人。检查工作完成后，将整件家具产品小心抬离地面移动、轻放，切忌硬拖猛推，避免划伤地面或损坏家具底脚。</p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="vtab4">
+                                                            <p>1. 所有家具类产品应选择平稳的地面摆放，防止家具重心不稳引起的翻倒或变形。
+                                                                <br>2. 沙发类家具产品摆放时应避免阳光直晒或靠近热源（空调热出风口和暖气附近）位置，阳光或热源长时间直接照在织物及皮革上，会破坏面料的组织，也会加速皮革的褪色。真皮沙发应放置在通风干燥处，避免潮湿、生霉和虫蛀。
+                                                                <br>3. 木质家具产品也应避免阳光直晒或靠近热源，防止家具出现裂缝和局部褪色变色、抽屉抽拉不畅等现象。适宜家具的温度为18到24摄氏度，相对湿度为35%到40%。为了达到这个适宜环境，可以在室内摆放些绿植，养殖些花草或观赏鱼，还可以增添生活情趣。如使用空气加湿器，请勿将雾气直接喷在家具上。
+                                                                <br>4. 柜体类家具内存放的物件，不能超过门的关闭位置，以防门面凸出变形。
+                                                            </p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="vtab5">
+                                                            <p>
+                                                                1. 柜体类产品的柜门在打开时不要施于重压，因为门铰是靠螺丝钉等固定在柜体上，起到了连接开合的作用。如果对门或门铰用力过大，会造成螺丝松动而使门铰脱落等问题出现。
+                                                                <br>2. 家具产品不可直接触及酸、碱类的化学物品。
+                                                                <br>3. 家具产品尤其是玻璃面产品在使用时应尽量避免被硬物、利器刮伤和划伤。
+                                                                <br>4. 避免使用塑料制品保护木质桌面或与桌面直接接触，防止家具呼吸不畅而导致的面漆及木皮受损。
+                                                                <br>5. 在家具上面放置高温物体时，一定要记得在家具表面放隔热垫，避免家具被烫伤。
+                                                                <br>6. 切忌在沙发上蹦跳，以免线爆或塌陷变形。
+                                                                <br>7. 沙发面套的拆装是技术含量较高的工作，客户如需拆装，建议您联系当地CAMERICH（锐驰）授权专卖店，安排专人来为您操作。如需自行拆装，请严格按照以下步骤进行，以防错误的拆装方法损坏面套，给您带来不必要的损失。
+                                                                <br>A、拆面套：首先，将所有的坐垫、靠垫拿开，从沙发底部拉开面套的搭扣或拉链，用拉毛布（已配置）把搭扣粘上，以免面料挂住搭扣抽丝；然后，将面套由下往上缓缓地剥离，按照沙发的一边至另一边每次几厘米的步骤交替进行；最后，将面套完全从沙发上卸下。剥离过程切忌强拉硬拽，以免面套变形。
+                                                                <br>B、拆垫子套：首先，拉开座垫或靠垫的拉链，用力挤压内胆使其变小，然后从开口处轻轻抽出内胆，将面套完全拆下。
+                                                                <br>C、罩面套：首先要认清面套的正反面，从沙发最高处两侧开始套下，按照沙发的一边至另一边每次几厘米的步骤交替进行，特别注意是扶手及靠背的边角处要罩整齐，使布套贴紧沙发本体，抚平皱折；最后在沙发底部拉上拉链或按平搭扣。
+                                                                <br>D、罩垫子套：首先要认清垫子套的正反面；打开垫子套的拉链后，应注意内胆斜度方向与垫子套一致；其次用力挤压内胆使其变小，从拉链口处塞进，使内胆与面套基本贴合；最后双手拍打垫子各面，使内胆与垫子套完全贴合好， 待其恢复原造型后把拉链拉上。在摆放垫子时，注意将有拉链或气孔的一侧靠后朝下，皮质靠垫的排气孔一侧朝后放置。
+                                                            </p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="vtab6">
+                                                            <p>在安全承受重量范围内，物件应轻拿轻放，以免瞬间受力过大造成家具损坏。
+                                                                <br>• 家具安全承重标准如下：
+                                                                <br>• 玻璃茶几、理石茶几承受重量：20公斤以下
+                                                                <br>• 木面茶几承受重量：40公斤以下
+                                                                <br>• 木面餐台承受重量：50公斤以下
+                                                                <br>• 地柜、电视柜承受重量：60公斤以下
+                                                                <br>• 厅柜、书柜、餐边柜、鞋柜层板承受重量：20公斤以下
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane" id="3b">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <a href="#" class="nav-tabs-dropdown btn btn-block btn-primary">Tabs</a>
+                                                    <ul id="nav-tabs-wrapper" class="nav nav-tabs nav-pills nav-stacked well smallTabs">
+                                                        <li class="active"><a href="#btab1" data-toggle="tab">织物类产品的保养</a></li>
+                                                        <li><a href="#btab2" data-toggle="tab">皮类产品的保养</a></li>
+                                                        <li><a href="#btab3" data-toggle="tab">玻璃产品的保养</a></li>
+                                                        <li><a href="#btab4" data-toggle="tab">木质家具的保养</a></li>
+                                                        <li><a href="#btab5" data-toggle="tab">家具零部件的保养</a></li>
+                                                        <li><a href="#btab6" data-toggle="tab">地毯的清理</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <div class="tab-content">
+                                                        <div role="tabpanel" class="tab-pane fade in active" id="btab1">
+                                                            <p>
+                                                                • 每两周进行一次表面的吸尘清理，清除织物缝隙及隐藏处的积尘。若沾染污渍，请用专业除渍产品立即清理，但在使用专业除渍产品前，在不明显处选小块位置先试用，确认该产品不会破坏面料颜色。织物面套的清洗要按照洗涤说明来操作，锐驰所有织物类产品均需干洗，请选择信誉好的专业清洗机构来清洗。
+                                                                <br>• 每周至少拍打座垫及靠垫一次，使其充分透气，并保持内部填充物聚氨酯的回弹力及羽绒的蓬松度，以保证座垫及靠垫不会变形，延长其使用寿命。
+                                                                <br>• 在多雨季节，为防止湿气的侵蚀，可在无雨时，用风筒吹沙发，及时除去沙发内的湿气。</p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade" id="btab2">
+                                                            <p>
+                                                                • 每两周进行一次表面的灰尘清理，用软布轻轻擦拭产品表面即可。若要对皮革产品进行吸尘，则必须使用软刷管口，以免擦破表面。若沾染污渍，请用软布沾少许皮革专用清理剂擦拭清理，请勿使用湿纸巾或湿布擦拭皮革产品。
+                                                                <br>• 在夏季，皮革的空隙会吸收汗液，产生异味，要经常用潮干的软布擦拭，选用专业的清洁护理产品，以免发生皲裂。
+                                                                <br>• 若不慎将蜡滴滴落到沙发上，在滴蜡处垫一块厚布，用熨斗熨一下，除去多余的蜡。如果口香糖掉落在沙发上，用保鲜膜裹着冰块置于粘口香糖处，使其变硬后轻轻刮掉。</p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="btab3">
+                                                            <p>玻璃面家具沾染油污或其它污渍，可先用少许洗洁精去污，再用清水将洗洁精清洗干净，最后用干布擦干，注意避免让水流入柜内或抽屉内。雾化玻璃产品如沾染污渍，可用少许去污粉清洁。
+                                                            </p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="btab4">
+                                                            <p>
+                                                                • 定期用潮干的软布顺着木纹方向擦拭木质家具产品。对于容易留下灰尘的角落处，应清洁彻底，因为灰尘长期不清除，会加速木质产品的老化速度。如家具沾染污渍，请立即清理。
+                                                                <br>• 请勿使用含有汽油性质或酒精类等水溶溶剂擦拭家具。请勿使用湿纸巾或过于潮湿的棉布擦拭木质家具，以免湿纸巾中的酒精成分腐蚀家具面漆或造成面漆脱落。
+                                                                <br>• 若较长时间未进行清洁，建议您使用专业的清洁剂。将清洁剂倒在柔软的棉布上进行清洁，然后把布翻转另一面进行擦拭，直到清洁剂被擦掉。
+                                                            </p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="btab5">
+                                                            <p>
+                                                                • 铝合金可用微湿抹布擦拭，但不能用酸、碱性清洁剂，否则会腐蚀铝合金表面的保护层，发生氧化现象，影响性能及美观。同时应避免硬物碰撞或刮伤，因为磕碰的表面也会出现氧化现象。
+                                                                <br>• 家具连接件在长时间使用后，个别部件的螺丝可能会有轻微松动，可用工具拧紧加固。
+                                                                <br>• 滑轨一年至少要进行两次清洁保养，先清理滑轨处的积尘，再滴入少许润滑油，使其保持滑动顺畅。同时注意擦去溢出的润滑油，避免损坏家具表面。
+                                                            </p>
+
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="btab6">
+                                                            <p>
+                                                                • 在清洗地毯时，可使用品质良好的干式泡沫清洁剂自行清理，或请专业的清洁公司来清洗。但切记，使用清洁剂前必须先将地毯吸干，免得使其背部组织受损，或腐蚀其内部结构。
+                                                                <br>• 对于使用已久的纯毛地毯，最好调整一下位置，使其磨损均匀。如出现凹凸不平情况，请您轻轻拍打或用蒸汽熨斗、热毛巾敷熨。
+                                                                <br>• 若不慎将液体洒落在地毯上，请您必须立即用吸水性好的纸巾或毛巾擦拭，尽可能的将污渍吸干，然后用海绵在污渍处沾上冷水再吸干。反复按照上述方法操作，直到将污渍吸附干净。这个方法也同样适用于洒落的红酒。但切忌用盐来擦拭，因为盐具有腐蚀性会损伤地毯。
+
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="4b">
+                                            <h6>皮革会不会让人夏天感到很热，而冬天又非常冰冷？</h6>
+                                            <p>皮革会随着周围环境而改变属性。随着房间的温度和人体的体温，它会保持一个让你体感舒适的温度。
+                                            </p>
+                                            <h6>我新买的皮革制品在表面有细小的纹路或印记，需要担心这些问题吗？</h6>
+                                            <p>遇到这样的问题，您不需要担心。因为皮革制品在表面有细小的印记，例如伤疤，虫咬，皱纹、条纹，以及由于天然牛皮每个部分的皮肤组织密度的不同产生的色差等都是原生皮的独特痕迹，是皮革的天然特点。CAMERICH的产品所使用的优质牛皮多选用圈养牛为主，此类皮质没有野牛的打斗伤痕，同时蚊虫叮咬留下的痕迹和病疾所致的疤痕也会比较少，并且每件产品都会尽量避免选取有色差的皮料，保证产品外观的精致和一致。
+
+                                            </p>
+                                            <h6>为什么我的皮革沙发在使用了几年后就出现了松弛的现象？</h6>
+                                            <p>天然皮革所具有的弹性会对特定使用的区域产生定型。就像新购买的真皮鞋子要穿一阵子才能合脚是一样的道理。这种松弛不是工艺上的疏漏，而是皮革天然属性的一种体现。
+
+                                            </p>
+                                            <h6>阳光照射会影响我沙发的颜色吗？</h6>
+                                            <p>无论是织物面料还是皮革，阳光直射都会影响其颜色。因为阳光直射会破坏面料及皮革的内部纤维组织，也会加速面料及皮革的褪色，经年累月后都有一定程度的颜色的变化。
+                                            </p>
+                                            <h6>我买的沙发的织物面料洗涤后会变形和掉色么？</h6>
+                                            <p>不会。我们多年来重视对于沙发面料的选择和使用，我们使用的面料无论是在肌理、触感或是色彩的饱和度及色牢度上，都是获得全球经销商及客户所认可的。由于面料成分的特殊性，所有面料都要求干洗方式清洗，而且禁止漂白，这样可以保证面料组织不会被破坏，不会产生变形和掉色的现象，延长使用寿命。
+                                            </p>
+                                            <h6>如何选择沙发织物类面套？</h6>
+                                            <p>
+                                                • 棉麻面料：它的特点是柔软、透气、很贴近皮肤，花色最多样，自然环保。
+                                                <br>• 混纺 面料：它的特点是易洗免烫，色泽绚丽，结实耐用，富有弹性，耐磨性强。
+                                                <br>• 羊毛面料：它的特点是柔顺、柔软,较轻，吸湿和透气性好，但耐磨性较弱。
+                                                <br>• 皮布结合沙发：它的特点是在靠背扶手等易脏却又不易拆洗的地方用皮革制作，而其它与人体 亲密接触又易拆洗的地方用织物面料制作，风格新颖且耐脏，结合了皮革和织物面料的优点。
+                                            </p>
+                                            <h6>如何选择实木类家具产品？</h6>
+                                            <p>纯实木家具（实木用量在90%－95％之间）和板木结合家具（实木用量在30％－90％之间)统称实木家具，现在市面上以板木结合的家具为主，纯实木的并不多见。
+                                                <br>• 纯实木家具：家具的所有用材都是实木，包括桌面、衣柜的门板、侧板等均采用实木制成，不使用其他任何形式的人造板。纯实木家具对工艺及材质要求很高，实木的选材、烘干、指接、拼缝等要求都很严格，如果哪一道工序把关不严，小则出现开裂、结合处松动等现象，大则整套家具变形，以至无法使用。
+                                                <br>• 板木结合家具：从外观上看是实木家具，木材的自然纹理、手感及色泽都和实木家具一模一样，但实际上是实木和人造板混用的家具，即侧板，顶、底、隔板等部件用薄木贴面的刨花板或中密度纤维板，门和抽屉则采用实木。这种工艺节约了木材，也降低了成本。 CAMERICH（锐驰）家具板件采用蜂窝结构技术，提高了板件的强度和刚性，具有良好的稳定性。我们使用低于国家甲醛含量标准（符合欧洲标准）的优质板材，板表面选用进口高级直纹橡木贴皮。表面油漆过程经过11道工序，并对每道工序都严格监管，最终的面漆经过测光仪器检测，将折光率严格控制在要求的范围内，
+                                                力求为消费者提供安全、环保的高品质产品。
+
+                                            </p>
+                                            <h6>沙发中的填充物哪种好？</h6>
+                                            <p>
+                                                聚氨酯填充：聚氨酯做沙发的填充物，具有较好的回弹性，柔软，透气，但是舒适度略显不足。
+                                                <br>羽绒填充：羽绒做沙发填充物，坐感柔软、舒适，在正常使用及保养情况下，不会产生变形现象，是一种成本高且慢回弹性的材质。 CAMERICH的设计师经过多年的设计研究,根据每款产品的特性,采用不同类型的填充方式, 使垫子的柔软舒适度达到最高标准,以满足不同的使用需求。
+                                            </p>
+                                            <h6>如何拆装沙发面套？</h6>
+                                            <p>沙发面套的拆装是技术含量较高的工作，客户如需拆装，建议您联系当地CAMERICH（锐驰）授权专卖店，安排专人来为您操作。如需自行拆装，请严格按照以下步骤进行，以防错误的拆装方法损坏面套，给您带来不必要的损失。
+                                                <br>1. 拆面套：首先，将所有的坐垫、靠垫拿开，从沙发底部拉开面套的搭扣或拉链，用拉毛布（已配置）把搭扣粘上，以免面料挂住搭扣抽丝；然后，将面套由下往上缓缓地剥离，按照沙发的一边至另一边每次几厘米的步骤交替进行；最后，将面套完全从沙发上卸下。剥离过程切忌强拉硬拽，以免面套变形。
+                                                <br>2. 拆垫子套：首先，拉开座垫或靠垫的拉链，用力挤压内胆使其变小，然后从开口处轻轻抽出内胆，将面套完全拆下。
+                                                <br>3. 罩面套：首先要认清面套的正反面，从沙发最高处两侧开始套下，按照沙发的一边至另一边每次几厘米的步骤交替进行，特别注意是扶手及靠背的边角处要罩整齐，使布套贴紧沙发本体，抚平皱折；最后在沙发底部拉上拉链或按平搭扣。
+                                                <br>4. 罩垫子套：首先要认清垫子套的正反面；打开垫子套的拉链后，应注意内胆斜度方向与垫子套一致；其次用力挤压内胆使其变小，从拉链口处塞进，使内胆与面套基本贴合；最后双手拍打垫子各面，使内胆与垫子套完全贴合好，待其恢复原造型后把拉链拉上。在摆放垫子时，注意将有拉链或气孔的一侧靠后朝下，皮质靠垫的排气孔一侧朝后放置。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="portfolio-modal modal fade" id="qualityModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>QUALITY </h2>
+                                <div id="service">
+                                    <ul class="nav nav-pills">
+                                        <li class="active">
+                                            <a href="#q1" data-toggle="tab">工艺</a>
+                                        </li>
+                                        <li><a href="#q2" data-toggle="tab">原材料</a>
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="tab-content clearfix">
+                                        <div class="tab-pane active" id="q1">
+                                            <p> 优秀家具产品的制作，尤其是软包部分，需要精湛的工艺技术和员工训练有素的水平。锐驰知道如何做好产品，并且拥有做好产品的必要手段。多少年来，锐驰的追随者总要把我们新推出的产品买回一款，研究学习其中的制作技巧。虽然面临着赶超的压力，但我们信心满满，因为我们的工艺技术在不断创新中，我们的员工水平在不断提升中。 除了精湛的常规工艺之外，锐驰拥有多项独创的工艺技术，既保证了产品的优良品质，也保持了锐驰的领先优势。这里仅举几例说明：
+                                                <br>• 软包型产品的等比例分皮工艺不仅使产品的外观立体感更强，同时优化了成本。
+                                                <br>• 独创的框架底边铣收边槽工艺，使产品的底部更加平整美观。
+                                                <br>• 采用了新的油漆工艺，使板式家具的面漆经过测光仪检测，折光率较原来降低了50%。这种亚光效果的面漆，加之肌理清晰的板材，使消费者对板式家具的视觉感受、品质感受更为强烈。
+                                                <br>• 所有软包型产品使用的角码全部开模制作成锐驰产品专用的型号。 锐驰保持着永远前进的姿态，在借用工业条件提供的便利的同时，不断提升工艺技术和员工水平，为消费者持续创造更多、更大的利益。
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane" id="q2">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <a href="#" class="nav-tabs-dropdown btn btn-block btn-primary">Tabs</a>
+                                                    <ul id="nav-tabs-wrapper" class="nav nav-tabs nav-pills nav-stacked well smallTabs">
+                                                        <li class="active"><a href="#qtab1" data-toggle="tab">前言</a></li>
+                                                        <li><a href="#qtab2" data-toggle="tab">布料</a></li>
+                                                        <li><a href="#qtab3" data-toggle="tab">皮</a></li>
+                                                        <li><a href="#qtab4" data-toggle="tab">皮毛</a></li>
+                                                        <li><a href="#qtab5" data-toggle="tab">羽绒</a></li>
+                                                        <li><a href="#qtab6" data-toggle="tab">框架</a></li>
+                                                        <li><a href="#qtab7" data-toggle="tab">板式</a></li>
+                                                        <li><a href="#qtab8" data-toggle="tab">五金配件</a></li>
+                                                        <li><a href="#qtab9" data-toggle="tab">金属</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <div class="tab-content">
+                                                        <div role="tabpanel" class="tab-pane fade in active" id="qtab1">
+                                                            <img class="img-responsive img-centered" src="img/quality/00.jpg" alt="">
+                                                            <p>从产品的选材环节就非常慎重，对各类产品所需的所有基材及辅料的挑选都非常细致和严苛，以保证产品的高品质。</p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade" id="qtab2">
+                                                            <img class="img-responsive img-centered" src="img/quality/01.jpg" alt="">
+                                                            <p> 多年来致力于布艺沙发的研究开发，在健康、安全、环保的前提下，我们通过对消费者喜好的调研，结合设计师对全球流行趋势的分析和对国内外顶尖面料厂商的走访和探讨，经过多次筛选试样，CAMERICH推出了24个系列70个面料品种，其中还有CAMERICH全国独家包版的面料。我们推出的面料有广阔的色彩空间，丰富的纹理、质地和风格，在面料色牢度和耐磨性方面也表现出色，能够为消费者打造独特的生活空间。</p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="qtab3">
+                                                            <img class="img-responsive img-centered" src="img/quality/02.jpg" alt="">
+                                                            <p>产品使用的原皮产自美国德州，通过设计师的调查研究，以国际潘通色卡为标准，选用最时尚华贵的色系，通过指定厂商严格地把控加工。CAMERICH 现在有 5 个等级 28 种皮子，丰富的色系为客户提供多种可选的皮质颜色。这些皮革面料不仅柔韧、耐磨，而且能够很自然的贴合您的身体，在您享受无比舒适的同时又不失自然的高贵。</p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="qtab4">
+                                                            <img class="img-responsive img-centered" src="img/quality/03.jpg" alt="">
+                                                            <p>动物皮毛因其精美华贵的色泽、柔软光滑的手感，常被用来做高档的服装，可以称之为奢华的代名词。锐驰将皮毛应用于家具产品中，选用的皮毛均为美国进口优质胎牛皮，或作为面料做椅子，或作为点缀用做靠垫，无论是哪一种，无不流露着锐驰低调奢华的品质。
+                                                            </p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="qtab5">
+                                                            <img class="img-responsive img-centered" src="img/quality/04.jpg" alt="">
+                                                            <p>所有靠垫和部分座垫均使用羽绒填充。羽绒因其特殊的结构，能够产生调温功能，可吸收人体散发流动的热气，隔绝外界冷空气的入侵。沙发中采用羽绒作为填充物， 不仅能带来更为柔软舒适感，而且因为羽绒的调温功能，在寒冷的冬天，给您带来温暖，天气较暖时，则清爽舒适。 我们选用的精选羽绒毛片均控制在2—4cm，清洁度达到600mm以上，远远超过国家标准。这些羽绒毛片经过高温漂洗以及防虫处理，无刺激性味道，更加柔软、舒适、有质感。
+                                                            </p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="qtab6">
+                                                            <img class="img-responsive img-centered" src="img/quality/05.jpg" alt="">
+                                                            <p>
+                                                                沙发框架所使用的材料不但在采购时进行精挑细选， 在引入生产阶段时也加以严格把关。锐驰沙发部分产品采用木框架， 框架的内部木架采用优等桦木全实木结构，结实耐用；外部实木用料采用优质进口水曲柳，花纹精美。还有一部分沙发采用全金属框架， 框架的金属均做了防锈处理，经过精心的设计和反复的试验，在为您提供了高品质的质量保证的同时增加了产品的美观度。
+                                                            </p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="qtab7">
+                                                            <img class="img-responsive img-centered" src="img/quality/06.jpg" alt="">
+                                                            <p>
+                                                                板式家具板件采用蜂窝结构技术，提高了板件的强度和刚性，具有良好的稳定性。 我们使用甲醛含量符合欧洲标准的优质板材，板表面采用进口高级直纹橡木贴皮。表面油漆过程经过11道工序， 并对每道工序都严格监管，最终的面漆经过测光仪器检测，将折光率严格控制在要求的范围内， 力求为消费者提供安全、环保的高品质产品。
+                                                            </p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="qtab8">
+                                                            <img class="img-responsive img-centered" src="img/quality/07.jpg" alt="">
+                                                            <p>
+                                                                所有柜体的连接件选用德国进口国际顶级的海蒂诗（Hettich）全抽隐藏式阻尼滑轨， 通过5万次开启测试的意大利EKA阻尼铰链，意大利VINCH钢绳翻门吊撑，沙发采用德国OKE蛇簧卡扣等等，一系列高品质的配件， 增强了产品的稳定性和耐用性，使产品使用起来更安全、舒适、和谐。
+                                                            </p>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade in" id="qtab9">
+                                                            <img class="img-responsive img-centered" src="img/quality/08.jpg" alt="">
+                                                            <p>
+                                                                使用的所有不锈钢产品均采用304材质，具有优良的耐腐蚀性。 其中，金属管材采用高频焊管，管壁厚度1.2-2mm。带钢材料采用定制冷轧带钢。 外露金属腿采用锌合金压铸金属腿，具有更高的强度，从而确保了产品的牢固性和稳定性。 金属表面采用镀铬、镀钛、镀镍和喷塑等多种工艺处理，为您提供更丰富的产品选择。 另外，所有金属间接触面均采用加垫或贴皮措施，防止噪音，真正做到从细节为客户着想，为您提供优质的生活保障。
+
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Back To Top -->
+    <a id="back-to-top" href="#">
+        <i class="font-icon-arrow-simple-up"></i>
+    </a>
+    <!-- End Back to Top -->
+
+
+    <!-- Js -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- jQuery Core -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/vue.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/supersized.3.2.7.min.js"></script>
+    <!-- Slider -->
+    <script src="js/waypoints.js"></script>
+    <!-- WayPoints -->
+    <script src="js/waypoints-sticky.js"></script>
+    <!-- Waypoints for Header -->
+    <script src="js/jquery.isotope.js"></script>
+    <!-- Isotope Filter -->
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <!-- Fancybox -->
+    <script src="js/jquery.fancybox-media.js"></script>
+    <!-- Fancybox for Media -->
+    <!-- <script src="js/jquery.tweet.js"></script> -->
+    <!-- Tweet -->
+    <script src="js/placeholder.js"></script>
+    <script src="js/plugins.js"></script>
+    <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+    <script src="js/main.js"></script>
+
+    <!-- Default JS -->
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=F04a577ec5458958b47d4608cb689f42"></script>
+    <!-- End Js -->
 
 </body>
+
 </html>
