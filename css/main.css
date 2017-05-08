@@ -241,7 +241,7 @@ h3.spec {
 
 h1, h2, h4, h3, h5 {
 	font-weight: normal;
-	color: #bbbbbb;
+	color: #fbfbfb;
 }
 
 /* ==================================================
@@ -653,7 +653,7 @@ nav#menu #menu-nav li a:hover {
 
 .title-page .title-description {
 	font-size: 24px;
-	font-weight: 200;
+	font-weight: 300;
 	margin: 0;
 }
 
@@ -1699,6 +1699,7 @@ a:hover {
 .blogevent ul li p {
 	margin: 0;
 	line-height: 18px;
+	font-size: 12px;
 }
 
 .events ul li {

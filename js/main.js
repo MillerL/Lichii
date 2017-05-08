@@ -434,7 +434,6 @@ jQuery(function ($) {
 
 
         BRUSHED.changeProduct = function () {
-
             /*读取json*/
             $.getJSON('./data/furniture.json', function (data) {
                 var _data = data;
