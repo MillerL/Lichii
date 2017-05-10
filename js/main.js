@@ -12,17 +12,15 @@ jQuery(function ($) {
 
         $lateral_menu_trigger.toggleClass('is-clicked');
         $navigation.toggleClass('lateral-menu-is-open');
-        $('#cd-lateral-nav').toggleClass('lateral-menu-is-open');
+        $('#home-nav').toggleClass('lateral-menu-is-open');
         //check if transitions are not supported - i.e. in IE9
         if ($('html').hasClass('no-csstransitions')) {
             $('body').toggleClass('overflow-hidden');
         }
     });
 
-    //open (or close) submenu items in the lateral menu. Close all the other open submenu items.
-    // console.log($('.item-has-children').children('a')[0]);
-    $('#defualtTag').addClass('submenu-open');
-    $('#defualtUl').show();
+    // $('#defualtTag').addClass('submenu-open');
+    // $('#defualtUl').show();
     $('.item-has-children').children('a').on('click', function (event) {
         event.preventDefault();
         $(this).toggleClass('submenu-open').next('.sub-menu').slideToggle(200).end().parent('.item-has-children').siblings('.item-has-children').children('a').removeClass('submenu-open').next('.sub-menu').slideUp(200);
@@ -155,12 +153,12 @@ jQuery(function ($) {
                 padding: 0,
                 beforeShow: function () {
                     this.title = $(this.element).attr('title');
-                    this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
+                    // this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
                 },
                 helpers: {
                     title: {
                         type: 'inside'
-                    },
+                    }
                 }
             });
 
@@ -172,7 +170,7 @@ jQuery(function ($) {
                 }
             });
         }
-    }
+    };
 
 
     /* ==================================================
@@ -435,12 +433,19 @@ jQuery(function ($) {
 
         BRUSHED.changeProduct = function () {
             /*读取json*/
-            $.getJSON('./data/furniture.json', function (data) {
+            $.getJSON('./data/home-furniture.json', function (data) {
                 var _data = data;
-                readString("SOFA", 1);
+                readString(_data, "SOFA", 6, "home");
+                for (var obj in _data) {
+                    for (var i = 0; i < _data[obj].length; i++) {
+                        var _obj = _data[obj][i];
+                        var _dom = "<li><a href='#0'>" + _obj.name + "</a></li>";
+                        $('#home-nav').find("." + obj).append(_dom);
+                    }
+                }
                 /*点击事件*/
-                $('.sub-menu').children('li').on('click', function () {
-                    $('#thumbs').empty();
+                $('#home-nav').find('.sub-menu').children('li').on('click', function () {
+                    $('#home-thumbs').empty();
                     var furnitureName = $(this).parent().prev().text();
                     var enName;
                     var index = $(this).index();
@@ -460,42 +465,78 @@ jQuery(function ($) {
                     } else if (furnitureName == "配件") {
                         enName = "ACCESSORIES";
                     }
-                    readString(enName, index);
+                    readString(_data, enName, index, "home");
                 });
-
-                function readString(_str, index) {
-                    // console.log(_data[_str][index]);
-                    var obj = _data[_str][index];
-                    var name = obj.name;
-                    var describe_cn = obj.describe_cn;
-                    var describe_en = obj.describe_en;
-                    var product = obj.product;
-                    // console.log(describe_en);
-                    //遍历数组
-                    for (var i = 0; i < product.length; i++) {
-                        var _obj = product[i];
-                        var _title = _obj.title;
-                        var _thumb = _obj.thumb;
-                        var _largeImg = _obj.largeImg;
-                        // var _describe = _obj.describe_cn;
-
-                        var dom = [
-                            '<li class="item-thumbs span3 design">',
-                            '<a class="hover-wrap fancybox" data-fancybox-group="gallery" title=' + _title + ' ',
-                            'href=' + _largeImg + '>',
-                            '<span class="overlay-img"></span>',
-                            '<span class="overlay-img-thumb font-icon-plus"></span>',
-                            '</a>',
-                            '<img src=' + _thumb + ' alt=' + describe_cn + '>',
-                            '</li>'
-                        ].join('');
-
-                        $('#thumbs').append(dom);
-                    }
-                    //
-                    BRUSHED.fancyBox();
-                }
             });
+            /*读取 max json*/
+            $.getJSON('./data/max-furniture.json', function (data) {
+                var _data = data;
+                readString(_data, "SOFA", 0, "max");
+                for (var obj in _data) {
+                    for (var i = 0; i < _data[obj].length; i++) {
+                        var _obj = _data[obj][i];
+                        var _dom = "<li><a href='#0'>" + _obj.name + "</a></li>";
+                        $('#max-nav').find("." + obj).append(_dom);
+                    }
+                }
+                /*点击事件*/
+                $('#max-nav').find('.sub-menu').children('li').on('click', function () {
+                    $('#max-thumbs').empty();
+                    var furnitureName = $(this).parent().prev().text();
+                    var enName;
+                    var index = $(this).index();
+                    if (furnitureName == "沙发") {
+                        enName = "SOFA";
+                    } else if (furnitureName == "椅子") {
+                        enName = "CHAIR";
+                    } else if (furnitureName == "茶几") {
+                        enName = "OCCASIONAL";
+                    } else if (furnitureName == "桌子") {
+                        enName = "TABLE";
+                    } else if (furnitureName == "床") {
+                        enName = "BED";
+                    } else if (furnitureName == "柜子") {
+                        enName = "CABINET";
+                    } else if (furnitureName == "配件") {
+                        enName = "ACCESSORIES";
+                    }
+                    readString(_data, enName, index, "max");
+                });
+            });
+
+            function readString(_data, _str, index, whichOne) {
+                var obj = _data[_str][index];
+                var name = obj.name;
+                var describe_cn = obj.describe_cn;
+                var describe_en = obj.describe_en;
+                var product = obj.product;
+                //遍历数组
+                for (var i = 0; i < product.length; i++) {
+                    var _obj = product[i];
+                    var _title = _obj.title;
+                    var _thumb = _obj.thumb;
+                    var _largeImg = _obj.largeImg;
+
+                    var dom = [
+                        '<li class="item-thumbs span3 design">',
+                        '<a class="hover-wrap fancybox" data-fancybox-group="gallery" title=' + _title + ' ',
+                        'href=' + _largeImg + '>',
+                        '<span class="overlay-img"></span>',
+                        '<span class="overlay-img-thumb font-icon-plus"></span>',
+                        '</a>',
+                        '<img src=' + _thumb + ' alt=' + describe_cn + '>',
+                        '</li>'
+                    ].join('');
+
+                    if (whichOne == "home") {
+                        $('#home-thumbs').append(dom);
+                    } else {
+                        $('#max-thumbs').append(dom);
+                    }
+                }
+                //
+                BRUSHED.fancyBox();
+            }
 
 
             //读取EVENT

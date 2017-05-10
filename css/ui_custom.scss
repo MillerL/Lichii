@@ -2,9 +2,60 @@ p {
     color: #969696;
 }
 
+.fancybox-title {
+    p {
+	font-size: 12px !important;
+	font-weight: 400 !important;
+    }
+}
+
+#appEvent {
+    h3 {
+	margin-left: -15px;
+    }
+}
+
+#newsApp {
+    h3 {
+	margin-left: -48px;
+	span {
+	    margin-right: 12px !important;
+	}
+    }
+}
+
+.modal-body {
+    h2 {
+	color: #333;
+    }
+    p {
+	color: #666;
+    }
+}
+
 .page-alternate {
     p {
 	font-size: 13px;
 	line-height: 23px;
     }
+}
+
+#home-thumbs {
+    overflow: hidden;
+}
+
+#max-thumbs {
+    overflow: hidden;
+}
+
+.furniture-style {
+    padding-left: 30px;
+    opacity: 1;
+    color: #f2ab00;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.max-style {
+    margin-top: 40px;
 }
