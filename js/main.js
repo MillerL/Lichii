@@ -19,8 +19,7 @@ jQuery(function ($) {
         }
     });
 
-    // $('#defualtTag').addClass('submenu-open');
-    // $('#defualtUl').show();
+    // $('#defualtTag').addClass('submenu-open
     $('.item-has-children').children('a').on('click', function (event) {
         event.preventDefault();
         $(this).toggleClass('submenu-open').next('.sub-menu').slideToggle(200).end().parent('.item-has-children').siblings('.item-has-children').children('a').removeClass('submenu-open').next('.sub-menu').slideUp(200);
@@ -368,12 +367,7 @@ jQuery(function ($) {
             nope: './js/placeholder.js',
             complete: function () {
                 if (!Modernizr.placeholder) {
-                    // Placeholders.init({
-                    // live: true,
-                    // hideOnFocus: false,
-                    // className: "yourClass",
-                    // textColor: "#999"
-                    // });
+
                 }
             }
         }]);
@@ -429,8 +423,6 @@ jQuery(function ($) {
                 marker.openInfoWindow(infoWindow);
             }
         }
-
-
         BRUSHED.changeProduct = function () {
             /*读取json*/
             $.getJSON('./data/home-furniture.json', function (data) {
@@ -543,54 +535,75 @@ jQuery(function ($) {
             var modalApp;
             $.getJSON('./data/event.json', function (data) {
                 var _data = data;
-                // console.log(_data);
-                var app1 = new Vue({
-                    el: '#appEvent',
-                    data: {
-                        events: _data
-                    },
-                    methods: {
-                        showEventModal: function (id) {
-                            app2.title = _data[id].title;
-                            app2.img = _data[id].img;
-                            app2.copy = _data[id].copy;
-                        }
-                    }
-                });
+                for (var i = 0; i < _data.length; i++) {
+                    var obj = _data[i];
+                    var thumb = obj.thumb;
+                    var title = obj.title;
+                    var img = obj.img;
+                    var intro = obj.intro;
+                    var date = obj.date;
+                    var year = obj.year;
 
-                var app2 = new Vue({
-                    el: '#eventDetail',
-                    data: _data[0]
-                })
-                modalApp = app2;
-
+                    var eventDom = [
+                        '<li>',
+                        '<div class="row">',
+                        '<div class="col-xs-12 col-sm-3 col-lg-4">',
+                        '<img class="img-responsive" src="' + thumb + '" alt="">',
+                        '</div>',
+                        '<div class="col-xs-12  col-sm-6 col-lg-5">',
+                        '<h5><a href="javascript:void(0)" class="eventTitle">' + title + '</a></h5>',
+                        '<p>' + intro + '</p>',
+                        '</div>',
+                        '<div class="col-xs-12  col-sm-3 col-lg-3 date">',
+                        '<b>' + year + '</b><span>' + date + '</span></div>',
+                        '</div>',
+                        '</li>'
+                    ].join("");
+                    $('#eventCon').append(eventDom);
+                    $('.eventTitle').on('click', function () {
+                        showModal(obj);
+                    });
+                }
             });
+            function showModal(obj) {
+                $('.modal-title').text(obj.title);
+                $('.modal-intro').text(obj.intro);
+                $('.modal-img').attr('src', obj.img);
+                $('.modal-copy').html(obj.copy);
+                $('#eventModal').modal('show');
+            }
 
             //读取新闻
             $.getJSON('./data/news.json', function (data) {
                 var _data = data;
-                console.log(_data);
+                for (var i = 0; i < _data.length; i++) {
+                    var obj = _data[i];
+                    var thumb = obj.thumb;
+                    var title = obj.title;
+                    var img = obj.img;
+                    var intro = obj.intro;
+                    var date = obj.date;
 
-                var appNews = new Vue({
-                    el: '#newsApp',
-                    data: {
-                        news: _data
-                    },
-                    methods: {
-                        showNewsModal: function (id) {
-                            // console.log(id);
-                            modalApp.title = _data[id].title;
-                            modalApp.img = _data[id].img;
-                            modalApp.copy = _data[id].copy;
-                        }
-                    }
-                });
-
+                    var newsDom = [
+                        '<li>',
+                        '<div class="row">',
+                        '<div class="col-xs-12 col-sm-3 col-lg-4">',
+                        '<img class="img-responsive" src="' + thumb + '" alt="">',
+                        '</div>',
+                        '<div class="col-xs-12  col-sm-6 col-lg-5">',
+                        '<h5><a href="javascript:void(0)" class="newsTitle">' + title + '</a></h5>',
+                        '<p>' + intro + '</p>',
+                        '</div>',
+                        '</li>'
+                    ].join("");
+                    $('#newsCon').append(newsDom);
+                    $('.newsTitle').on('click', function () {
+                        showModal(obj);
+                    });
+                }
             });
 
         };
-
-
         BRUSHED.nav();
         BRUSHED.mobileNav();
         BRUSHED.listenerMenu();
@@ -598,7 +611,6 @@ jQuery(function ($) {
         BRUSHED.goSection();
         BRUSHED.goUp();
         BRUSHED.changeProduct();
-        // BRUSHED.contactForm();
         BRUSHED.scrollToTop();
         BRUSHED.utils();
         BRUSHED.accordion();

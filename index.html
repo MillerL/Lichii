@@ -85,16 +85,15 @@
 <div id="blogevent" class="blogevent spacer page">
     <div class="container">
         <div class="row">
-            <!-- events -->
             <div class="col-md-6 col-xs-12">
                 <div class="events" id="appEvent">
                     <h3><span class="glyphicon glyphicon-calendar"></span> Events</h3>
-                    <ul>
-                        <li v-for="event in events">
+                    <ul id="eventCon">
+                        <!--<li v-for="event in events">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-3 col-lg-4">
-                                    <a href="#eventModal" data-toggle="modal" v-on:click="showEventModal(event.id)"><img
-                                            v-bind:src="event.thumb" class="img-responsive" alt="music theme"/></a>
+                                    <a href="#eventModal" data-toggle="modal" v-on:click="showEventModal(event.id)">
+                                        <img v-bind:src="event.thumb" class="img-responsive" alt="music theme"/></a>
                                 </div>
                                 <div class="col-xs-12  col-sm-6 col-lg-5">
                                     <h5><a href="#" data-toggle="modal" data-target="#eventModal"
@@ -104,7 +103,8 @@
                                 <div class="col-xs-12  col-sm-3 col-lg-3 date">
                                     <b>{{event.year}}</b><span>{{event.date}}</span></div>
                             </div>
-                        </li>
+                        </li>-->
+
 
                     </ul>
                 </div>
@@ -116,18 +116,8 @@
                 <div class="ourblog" id="newsApp">
 
                     <h3><span class="glyphicon glyphicon-book"></span>News</h3>
-                    <ul class="row">
-                        <li class="row" v-for="newItem in news">
-                            <a href="#" data-toggle="modal" data-target="#eventModal"
-                               v-on:click='showNewsModal(newItem.id)' class="col-xs-12 col-sm-3 col-lg-4"><img
-                                    v-bind:src="newItem.thumb" class="img-responsive" alt="music theme"/></a>
-                            <div class="blogtext col-xs-12 col-sm-9 col-lg-8">
-                                <h5><a href="#" data-toggle="modal" data-target="#eventModal"
-                                       v-on:click="showNewsModal(newItem.id)"> {{newItem.title}} </a></h5>
-                                <small>Posted on: {{ newItem.date }}</small>
-                                <p>{{ newItem.intro }}</p>
-                            </div>
-                        </li>
+                    <ul class="row" id="newsCon">
+
 
                     </ul>
                 </div>
@@ -141,18 +131,16 @@
 <!-- Our Work Section -->
 <div id="work" class="page">
     <div class="container">
-
         <!-- Title Page -->
         <div class="row">
             <div class="span12">
                 <div class="title-page">
                     <h2 class="title">家装创意</h2>
-                    <h3 class="title-description">缤纷种类，应有尽有。</h3>
+                    <h3 class="title-description">Home系列和S系列</h3>
                 </div>
             </div>
         </div>
         <!-- End Title Page -->
-
         <!-- home 家具 -->
         <div class="row">
             <h3 class="furniture-style">HOME STYLE</h3>
@@ -293,57 +281,42 @@
                 </div>
                 <h3 class="profile-name">理念</h3>
                 <p class="profile-description">
-                    家具之于人类，是心灵在家居生活中的回归。<br> 每次接触，都在内心产生一种不可察觉的暗示，然后形成心理的表达。
-                    <br>了解人与环境的沟通，希望传递一种生活态度和情感，表达优雅的极致生活方式。 深刻了解用户需求，锐驰家具产品强调创造和实现，力求精确诠释每个客户独一无二的“HOME IDEA”。</p>
-
-
+                    传统的装饰风格家具主要受到本土文化与现代主义的影响，将建筑的线条或简单几何的造型融入到家具中，
+                    丰富的色彩，吸引消费者的目光,新装饰主义有别于传统的装饰风格的华丽感，新装饰时代讲求红花绿叶的搭配，
+                    着重于实用，典雅与品味。在呈现精简线条同时，又蕴含奢华感，通过异材质的搭配，并朝向“人性化”的表现方式进展；
+                    新装饰主义在整体家居搭配上比较自由，更满足每个人对审美的不同需求，让室内环境的搭配上更具有多样性。
+                </p>
             </div>
             <!-- End Profile -->
 
             <!-- Start Profile -->
             <div class="span4 profile">
                 <div class="image-wrap">
-                    <!-- <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Creative Director</span>
-                </div> -->
                     <img src="img/about/brand.jpg" alt="Jane Helf">
                 </div>
                 <h3 class="profile-name">品牌</h3>
-                <p class="profile-description">骊驰家具创立于2011年，其设计研发部位于誉有“设计之都”的深圳，
-                    集合了一帮真正热爱家具的国内外设计师，历经三年设计与研发，凭借2016年推出的骊驰高端S系列，在行业内取得了骄人的成绩。
-                    每款新产品的推出都是经过骊驰团队的精心设计和工艺师们细心的研究，秉着三年磨一剑的精神做好骊驰的每一件产品，2016年即将推出骊驰的中端C系列。
+                <p class="profile-description">骊驰家具创立于2012年，其设计研发部位于誉有“设计之都”的深圳，
+                    集合了一帮真正热爱家具的国内外设计师，历经三年设计与研发，凭借2014年推出的骊驰高端Max系列，在行业内取得了骄人的成绩，
+                    2017年推出的Home系列，更是得到了国内外专业人士的认可。
                 </p>
-
-
             </div>
             <!-- End Profile -->
-
             <!-- Start Profile -->
             <div class="span4 profile">
                 <div class="image-wrap">
-                    <!-- <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Lead Designer</span>
-                </div> -->
                     <img src="img/about/development.jpg" alt="Joshua Insanus">
                 </div>
                 <h3 class="profile-name">发展</h3>
-                <p class="profile-description">历经三年设计与研发，凭借2016年推出的骊驰高端S系列，在行业内取得了骄人的成绩。
-                    每款新产品的推出都是经过骊驰团队的精心设计和工艺师们细心的研究，秉着三年磨一剑的精神做好骊驰的每一件产品，2016年即将推出骊驰的中端C系列。
+                <p class="profile-description">从骊驰品牌的创立到2017年广州琶洲家具展取得的成功，我们走过了整整五个年头，经过五年的修养与磨练，
+                    我们已经更加坚定我们一开始的初衷，希望拿出更多优秀的作品与大家分享；经过五年的成长与壮大，我们已经拥有自己成熟的生产系统，自主的设计研发部门、软体生产车间、实木生产车间、五金生产车间。
                 </p>
-
-
             </div>
             <!-- End Profile -->
-
         </div>
         <!-- End People -->
     </div>
 </div>
 <!-- End About Section -->
-
-
 <!-- Contact Section -->
 <div id="contact" class="page">
     <div class="container">
@@ -414,12 +387,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body" id="eventDetail">
-                            <!-- Project Details Go Here -->
-                            <h2>{{title}}</h2>
-                            <!-- <p class="item-intro text-muted">2016-09-09 posted</p> -->
-                            <img class="img-responsive img-centered" v-bind:src="img" alt="">
-                            <p>{{copy}}</p>
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+                            <h2 class="modal-title"></h2>
+                            <p class="item-intro text-muted modal-intro"></p>
+                            <img class="img-responsive img-centered modal-img" src="" alt="">
+                            <p class="modal-copy"></p>
+                            <button type="button" id="closeModal" class="btn btn-danger" data-dismiss="modal">关闭
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -428,8 +401,6 @@
     </div>
 </div>
 <!-- Modal -->
-
-
 <div class="portfolio-modal modal fade" id="serviceModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -678,7 +649,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="portfolio-modal modal fade" id="qualityModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">

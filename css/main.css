@@ -653,7 +653,7 @@ nav#menu #menu-nav li a:hover {
 
 .title-page .title-description {
 	font-size: 24px;
-	font-weight: 300;
+	font-weight: 400;
 	margin: 0;
 }
 
@@ -1488,7 +1488,7 @@ footer .credits {
 }
 
 .item-intro {
-	text-align: center;;
+	text-align: left;
 }
 
 .portfolio-modal .close-modal .lr {
@@ -1943,5 +1943,4 @@ a:hover {
 .modal-body h2 {
 	text-align: left;
 	font-size: 32px;
-	padding-bottom: 20px;
 }

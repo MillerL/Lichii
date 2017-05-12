@@ -171,11 +171,6 @@
           "title": "BL030",
           "thumb": "img/max-products/sofa/thumb/BL030/1.jpg",
           "largeImg": "img/max-products/sofa/large/BL030/1.jpg"
-        },
-        {
-          "title": "BL030",
-          "thumb": "img/max-products/sofa/thumb/BL030/2.jpg",
-          "largeImg": "img/max-products/sofa/large/BL030/2.jpg"
         }
       ]
     },
@@ -188,6 +183,11 @@
           "title": "BL032",
           "thumb": "img/max-products/sofa/thumb/BL032/1.jpg",
           "largeImg": "img/max-products/sofa/large/BL032/1.jpg"
+        },
+        {
+          "title": "BL032",
+          "thumb": "img/max-products/sofa/thumb/BL032/2.jpg",
+          "largeImg": "img/max-products/sofa/large/BL032/2.jpg"
         }
       ]
     },
