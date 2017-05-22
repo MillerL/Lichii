@@ -388,7 +388,7 @@ jQuery(function ($) {
         //初始化地图
         BRUSHED.initMap = function () {
             // 百度地图API功能
-            ShowMap('114.199631,22.664393', '深圳市骊驰家具有限公司', '山塘工业区', '086-0755-89765854', '086-0755-89765854', '15');
+            ShowMap('113.064117,22.853491', '佛山市顺德区龙江镇旺岗工业区兴业路2号', '名家家具', '0757-23361336', '0757-23380822', '15');
 
             function getInfo(id) {
                 $.ajax({
@@ -583,14 +583,13 @@ jQuery(function ($) {
                     var img = obj.img;
                     var intro = obj.intro;
                     var date = obj.date;
-
                     var newsDom = [
                         '<li>',
                         '<div class="row">',
                         '<div class="col-xs-12 col-sm-3 col-lg-4">',
                         '<img class="img-responsive" src="' + thumb + '" alt="">',
                         '</div>',
-                        '<div class="col-xs-12  col-sm-6 col-lg-5">',
+                        '<div class="col-xs-12  col-sm-6 col-lg-6">',
                         '<h5><a href="javascript:void(0)" class="newsTitle">' + title + '</a></h5>',
                         '<p>' + intro + '</p>',
                         '</div>',

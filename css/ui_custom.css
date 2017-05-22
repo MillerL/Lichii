@@ -5,6 +5,9 @@ p {
   font-size: 12px !important;
   font-weight: 400 !important; }
 
+.address-info {
+  font-size: 13px; }
+
 #appEvent h3 {
   margin-left: -15px; }
 
