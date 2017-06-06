@@ -7,7 +7,8 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-
+var getWpList = require('./routes/getWpList');
+var wp = require("./routes/wp");
 var app = express();
 
 // view engine setup
@@ -25,6 +26,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+
+//mongo
+app.use('/wp', wp);
+app.use('/getWpList', getWpList);
+
 
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!')
