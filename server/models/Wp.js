@@ -1,6 +1,6 @@
-var express = require('express');
-var mongodb = require('./mongodb');
-var Schema = mongodb.mongoose.Schema;
+// var mongodb = require('./mongodb');
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
 var WpSchema = new Schema({
     type: String,
@@ -11,20 +11,23 @@ var WpSchema = new Schema({
     index: String,
     total: String
 }, {collection: "wp"});
-var Wp = mongodb.mongoose.model('Wp', WpSchema);
-var WpApi = function () {
-};
+var Wp = mongoose.model('Wp', WpSchema);
+/*var WpApi = function () {
+ };
 
-WpApi.prototype.getDataList = function (callback) {
-    var db = mongodb.mongoose.connection;
-    db.on('error', console.error.bind(console, 'connection error:'));
-    db.once('open', function () {
-        Wp.find().sort({"id": -1}).limit(10).exec(function (err, docs) {
-            callback(err, docs);
-        });
-
-    })
-};
+ WpApi.prototype.getDataList = function (callback) {
+ var db = mongodb.mongoose.connection;
+ db.on('error', console.error.bind(console, 'connection error:'));
+ db.once('open', function () {
+ /!*Wp.find().sort({"id": -1}).limit(10).exec(function (err, docs) {
+ callback(err, docs);
+ });*!/
+ console.log("open db");
+ Wp.find({}, function (err, docs) {
+ callback(err, docs);
+ });
+ })
+ };*/
 /*WpApi.prototype.save = function (obj, callback) {
  var instance = new Wp(obj);
  instance.save(function (err) {
@@ -39,6 +42,5 @@ WpApi.prototype.getDataList = function (callback) {
  callback(err, obj);
  });
  };*/
+module.exports = Wp;
 
-
-module.exports = new WpApi();
