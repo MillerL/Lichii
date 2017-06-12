@@ -15,14 +15,24 @@ router.get('/', function (req, res) {
     res.send("wp");
 });
 
-router.get('/getDataList', function (req, res, next) {
-    Wp.find({}).sort({"id": -1}).limit(10).exec(function (err, docs) {
+router.get('/getDataList', function (req, res) {
+    var today = req.query.today;//获取URL里的today参数的值
+    var num = parseInt(req.query.num);
+    //查询数据库
+    Wp.find({id: {$lte: today}}).sort({"id": -1}).limit(num).exec(function (err, docs) {
         if (err) throw err;
         // object of the user
         var response = {status: 1, data: docs, errorDesc: err};
         res.send(response);
     });
 });
+/*router.get('/getDataListByDate', function (req, res) {
+ Wp.find({}).sort({"id": -1}).limit(10).exec(function (err, docs) {
+ if (err) throw err;
+ var response = {status: 1, data: docs, errorDesc: err};
+ res.send(response);
+ });
+ });*/
 
 module.exports = router;
 
