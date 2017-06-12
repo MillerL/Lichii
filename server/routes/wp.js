@@ -4,8 +4,10 @@ var Wp = require("./../models/Wp");
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://miller:xiao@121.40.148.8:27017/mintWp');
 var db = mongoose.connection;
+
 // var db = mongoose.createConnection('mongodb://miller:xiao@121.40.148.8:27017/mintWp');
 // 链接错误
+
 db.on('error', function (error) {
     console.log(error);
 });
