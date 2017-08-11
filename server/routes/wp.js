@@ -19,32 +19,26 @@ router.get('/', function (req, res) {
 });
 
 router.get('/getDataList', function (req, res) {
-    /*var today = req.query.today;//获取URL里的today参数的值
-     var month = req.query.month;
-     var num = parseInt(req.query.num);*/
+    var today = req.query.today;//获取URL里的today参数的值
+    var month = req.query.month;
+    var num = parseInt(req.query.num);
     //查询数据库
-    Wp.find({}).exec(function (err, docs) {
-        if (err) throw err;
-        // object of the user
-        // console.log("dsaasdasdsas");
-        var response = {status: 1, data: docs, errorDesc: err};
-        res.send(response);
-    });
-    /*if (today) {
-     Wp.find({id: {$lte: today}, month: month}).sort({"id": -1}).exec(function (err, docs) {
-     if (err) throw err;
-     // object of the user
-     var response = {status: 1, data: docs, errorDesc: err};
-     res.send(response);
-     });
-     } else {
-     Wp.find({month: month}).sort({"id": -1}).exec(function (err, docs) {
-     if (err) throw err;
-     // object of the user
-     var response = {status: 1, data: docs, errorDesc: err, wtc: "rrrr"};
-     res.send(response);
-     });
-     }*/
+
+    if (today) {
+        Wp.find({id: {$lte: today}, month: month}).sort({"id": -1}).exec(function (err, docs) {
+            if (err) throw err;
+            // object of the user
+            var response = {status: 1, data: docs, errorDesc: err};
+            res.send(response);
+        });
+    } else {
+        Wp.find({month: month}).sort({"id": -1}).exec(function (err, docs) {
+            if (err) throw err;
+            // object of the user
+            var response = {status: 1, data: docs, errorDesc: err};
+            res.send(response);
+        });
+    }
 });
 /*router.get('/getDataListByDate', function (req, res) {
  Wp.find({}).sort({"id": -1}).limit(10).exec(function (err, docs) {
