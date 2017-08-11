@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 var WpSchema = new Schema({
     type: String,
     id: String,
-    month: String,
+    month: Number,
     pic: String,
     desc: String,
     index: String,

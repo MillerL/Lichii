@@ -23,7 +23,6 @@ router.get('/getDataList', function (req, res) {
     var month = req.query.month;
     var num = parseInt(req.query.num);
     //查询数据库
-
     if (today) {
         Wp.find({id: {$lte: today}, month: month}).sort({"id": -1}).exec(function (err, docs) {
             if (err) throw err;
