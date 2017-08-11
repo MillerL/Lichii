@@ -10,7 +10,7 @@ var WpSchema = new Schema({
     desc: String,
     index: String,
     total: String
-}, {collection: "wp"});
+}, {collection: "wallpapers"});
 var Wp = mongoose.model('Wp', WpSchema);
 /*var WpApi = function () {
  };
