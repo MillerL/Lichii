@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var Wp = require("./../models/Wp");
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://mint:xiao@121.40.148.8:10001/mintWp');
+mongoose.connect('mongodb://mint:xiao@127.0.0.1:10001/mintWp');
 var db = mongoose.connection;
 
 // var db = mongoose.createConnection('mongodb://miller:xiao@121.40.148.8:27017/mintWp');
