@@ -9,3 +9,4 @@
 out
 gen
 Would skip repository server/
+/server/node_modules/
