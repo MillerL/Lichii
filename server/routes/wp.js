@@ -34,7 +34,7 @@ router.get('/getDataList', function (req, res) {
     // var _day = day.toString();
     console.log(year);
     if (year && month) {
-        Wp.find({year: year, month: month}).sort({"id": -1}).exec(function (err, docs) {
+        Wp.find({year: year, month: month}).sort({"id": 1}).exec(function (err, docs) {
             if (err) throw err;
             // object of the user
             var response = {status: 1, data: docs, errorDesc: err};
